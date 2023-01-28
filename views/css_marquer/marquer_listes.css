@@ -1,0 +1,217 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-3 {
+  box-shadow: 3px 3px 6px gray;
+}
+#layoutSidenav_content .alert {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#layoutSidenav_content #titre-classe {
+  font-style: italic;
+  font-family: Algerian;
+  text-decoration: underline;
+}
+/* #btn-absence-justifier,#form_mois{
+  float: left;
+}
+#btn-liste-present,#lien_nombre_absence{
+  float: right;
+} */
+#card {
+  margin-left: 17%;
+  margin-right: 8%;
+  box-shadow: 1px 1px 2px gray;
+  width: 65%;
+}
+h2 {
+  text-transform: capitalize;
+}
+#page-precedent{
+  display: none;
+}
+#large-select {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.champs {
+  flex-direction: row;
+  width: 48%;
+}
+.champs-2-text {
+  width: 25%;
+}
+
+form {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.champs .color-span {
+  background-color: goldenrod;
+}
+.champs {
+  display: flex;
+}
+
+form button {
+  text-decoration: none;
+  padding-right: 5px;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+}
+.button-send {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  border: none;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  background-color: green;
+  color: white;
+  width: 95%;
+  font-size: large;
+}
+
+.button-send:hover {
+  box-shadow: 6px 6px 15px royalblue;
+}
+
+.data-table table {
+  text-align: center;
+}
+
+.data-table table,
+.data-table th .data-table td {
+  border-collapse: collapse;
+}
+#th-table {
+  background-color: darkgoldenrod;
+  font-size: medium;
+  text-transform: capitalize;
+}
+td {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.data-table #td_table_presence_marquer{
+  font-size: medium;
+  padding-top: 14px;
+  padding-bottom: 4px;
+}
+
+.data-table table a {
+  display: inline-block;
+  padding: 1px 1px;
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.button-presence {
+  width: 10px;
+}
+
+/* ********************************Medias querys */
+@media screen and (max-width: 992px) {
+  .data-table .gestion-personnel,
+  .data-table .pw-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .data-table {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .data-table #td_table_presence_marquer{
+  font-size: small;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+    nav ol #page-actuel{
+    display: none;
+  }
+nav ol #page-precedent{
+  display: block;
+}
+
+ .data-table table {
+    width: auto;
+  }
+ .data-table #table-container  {
+  overflow-x: scroll;
+
+  }
+  nav #lsll {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  td {
+    text-transform: capitalize;
+    font-size: smaller;
+  }
+  .group-1,
+  .all-group {
+    flex-direction: column;
+  }
+  .champs {
+    padding-left: 0px;
+    display: flex;
+    width: 100%;
+  }
+  form .div-select {
+    width: 80%;
+  }
+  .champs span,
+  .all-group {
+    margin-left: 10px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .form-presence {
+    display: flex;
+  }
+
+  .data-table  #table-container  {
+    margin-bottom: 5px;
+  }
+
+  .button-send {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  nav #lsll {
+    font-size: 15px;
+  }
+  div h3 {
+    font-size: large;
+  }
+  div span {
+    font-size: x-small;
+  }
+  .champs span,
+  .all-group {
+    margin-left: 0px;
+  }
+
+
+
+}

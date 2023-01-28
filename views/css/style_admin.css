@@ -1,0 +1,115 @@
+.row {
+  box-shadow: 2px 2px 2px 2px gray;
+   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row2,
+.row3 {
+  box-shadow: 2px 2px 2px 2px gray;
+  height: auto;
+ 
+}
+.row2 .card2,
+.row3 .card3 {
+  overflow-y: scroll;
+  
+}
+.row2 .card2 {
+  height: 800px;
+}
+.row3 .card3 {
+  height: 800px;
+}
+.row .grid {
+  width: 16%;
+  margin-left: 3px;
+  font-size: larger;
+}
+.row .grid .card {
+  height: 100px;
+}
+#message {
+  border: 1px dashed gray;
+  padding: 8px;
+  box-shadow: 2px 2px 3px black;
+
+}
+#question,#reponse{
+   box-shadow: 1px 1px 2px black;
+   background-color: white;
+   color: black;
+   padding: 10px;
+}
+h5 {
+  color: midnightblue;
+}
+.butt {
+  box-shadow: 6px 6px 6px gray;
+}
+/*********css du fichier form***************/
+#form-reponse {
+  margin-top: 5%;
+  margin-left: 3px;
+  padding: 5px;
+  width: 90%;
+  border: 1px solid black;
+  box-shadow: 6px 6px 70px gray;
+}
+#titre-nouvelle {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color:darkred;
+ 
+}
+.message{
+  width: 100%;
+ height:auto;
+  border: 2px solid gray;
+   box-shadow: 2px 2px 3px black;
+   background-color: gray;
+   color: black;
+}
+/*les medias query*/
+
+  @media screen and (max-width: 1024px) {
+  #section {
+    display: block;
+  }
+  .row2,
+  .row3 {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+    .row .grid {
+    width: 24%; 
+  }
+
+}
+@media screen and (max-width: 768) {
+.message{
+  height:auto;
+}
+
+}
+@media screen and (max-width: 500px) {
+  .row .grid {
+    width: 48%;
+    /* padding-right: 15px; */
+    margin-left: 1px;
+  }
+
+}
+@media screen and (max-width: 375px) {
+  .row .grid {
+    width: 98%;
+  }
+   nav #lsll {
+    font-size: 15px;
+  }
+}
+/* @media screen and (max-width: 320px) {
+ =
+} */

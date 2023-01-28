@@ -1,0 +1,18 @@
+.container-fluid #donnes_1,
+.container-fluid #donnes_2,
+.container-fluid #donnes_3 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+  #courbe{
+    display:none;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav #lsll {
+    font-size: small;
+  }
+ 
+}

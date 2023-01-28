@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 12%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+h2 {
+  color: goldenrod;
+  padding-top: 12%;
+  margin-left: 25%;
+  padding-bottom: 2%;
+}
+form {
+  height: 540px;
+  background-color: white;
+  opacity: 0.7;
+  margin-left: 28%;
+  width: 43%;
+  text-align: center;
+  border-left: 15px solid goldenrod;
+  border-right: 15px solid goldenrod;
+}
+/* ************************ */
+form input .email,form input .date_naissance {
+  padding: 3px;
+  margin-top: 0px;
+
+}
+form .form-group2 {
+  margin: 10px;
+    margin-left: 43px;
+  margin-right: 43px;
+}
+form  .form-group-button{
+    margin-top: 50px;
+    margin-left: 43px;
+    margin-right: 43px;
+}
+label{
+  color: black;
+  font-weight: bold;
+}
+
+/* ************************* */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2px;
+  border: 2px solid goldenrod;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: large;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.form-group {
+  margin: 30px;
+  margin-left: 43px;
+  margin-right: 43px;
+}
+form .button {
+  border: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: goldenrod;
+  box-shadow: 5px 5px 6px black;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+form .button:hover {
+  color: white;
+}
+#voir {
+  display: flex;
+  color: green;
+  /*margin: auto;*/
+  float: right;
+  position: relative;
+  /*top: -44px;*/
+  margin-right: 32px;
+  margin-top: -8%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+i {
+  font-size: 23px;
+  transition-duration: 600ms;
+}
+.mot-pass-oublier {
+  color: saddlebrown;
+  font-size: large;
+}
+
+/**************************************************************************************************/
+/* les medias queries */
+/*taille d'écran entre 300px - 600px*/
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    background: url("photo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  .form-body {
+    padding-top: 20%;
+    padding-bottom: 20px;
+    margin-left: -28%;
+    margin-right:0px;
+  }
+  h2 {
+    /*width: 350px;*/
+    *width:50%;
+    font-size: medium;
+    padding-right: 60px;
+  }
+
+  form {
+    /*width: 500px;*/
+     width: 100%;
+    height: auto;
+  }
+
+  i {
+    font-size: 12px;
+  }
+}
+/*taille d'écran entre 6001 - 720*/
+@media screen and (min-width: 601px) and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+    background: url("photo2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .form-body {
+    padding-top: 20%;
+    padding-bottom: 20px;
+    margin-left: -23%;
+    margin-right: 24%;
+  }
+  h2 {
+    width: 350px;
+    font-size: medium;
+    padding-right: 100px;
+  }
+
+  form {
+    /* margin: 10%; */
+    width: 570px;
+    height: auto;
+  }
+
+  i {
+    font-size: 12px;
+  }
+}
+
+/*taille d'écran entre 721px - 850*/
+@media screen and (min-width: 721px) and (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+    background: url("photo2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .form-body {
+    padding-top: 15%;
+    padding-bottom: 20px;
+    margin-left: -18%;
+    /* margin-right: 24%; */
+  }
+  h2 {
+    width: 350px;
+    font-size: medium;
+    padding-right: 100px;
+  }
+
+  form {
+    /* margin: 10%; */
+    width: 600px;
+    height: 500px;
+  }
+
+  i {
+    font-size: 12px;
+  }
+}
+h5 {
+  color: red;
+  width: 60%;
+  height: 50px;
+  margin-left: 100px;
+  padding-top: 5px;
+  background-color: darkgray;
+  font-weight: 900;
+  box-shadow: 5px 5px 5px black;
+}
+/*taille d'écran entre 721px - 850*/
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    background: url("photos.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+    background-repeat: no-repeat;
+  }
+  .form-body {
+    padding-top: 12%;
+    padding-bottom: 20px;
+    margin-left: -10%;
+  }
+  h2 {
+    width: 350px;
+    font-size: medium;
+    padding-right: 70px;
+  }
+
+  form {
+    width: 600px;
+    height: 550px;
+  }
+  .form-group {
+    margin: 36px;
+    margin-left: 43px;
+    margin-right: 43px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
+h5 {
+  color: tomato;
+  margin-bottom: 3px;
+}
+/*taille d'écran entre 721px - 850*/
+@media screen and (min-width: 1201px) {
+  body {
+    overflow-x: hidden;
+    background: url("photos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .form-body {
+    padding-top: 12%;
+    padding-bottom: 20px;
+    margin-left: -2%;
+  }
+  h2 {
+    width: 350px;
+    font-size: medium;
+    padding-right: 70px;
+  }
+
+  form {
+    width: 600px;
+    height: 550px;
+  }
+  .form-group {
+    margin: 36px;
+    margin-left: 43px;
+    margin-right: 43px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
+/*taille d'écran entre 721px - 850*/
+@media screen and (min-width: 2100px) {
+  body {
+    overflow-x: hidden;
+    background: url("photos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .form-body {
+    padding-top: 12%;
+    padding-bottom: 20px;
+    margin-left: 10%;
+  }
+  h2 {
+    width: 350px;
+    font-size: medium;
+    padding-right: 70px;
+  }
+
+  form {
+    width: 750px;
+    height: 550px;
+  }
+  .form-group {
+    margin: 36px;
+    margin-left: 43px;
+    margin-right: 43px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
